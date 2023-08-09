@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        /* CALCULATOR  */
+
+        form {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 90vh;
+            background-color: rgb(154, 252, 229);
+        }
+
+
+        input {
+            padding: 16px;
+            margin: 5px;
+            border-radius: 18px;
+            border: none;
+            font-weight: 600;
+            width: 56px;
+
+        }
+
+
+
+        .form {
+            box-shadow: 20px 20px 16px black;
+            border-radius: 16px;
+            padding: 22px;
+            font-size: 24px;
+            background-color: rgba(110, 110, 110, 0.878);
+        }
+
+        .num {
+            margin: 6px;
+        }
+
+        #cal {
+            width: 85%;
+            margin: 10px;
+            border-radius: 10px;
+            background-color: rgb(70, 255, 193);
+            font-size: 16px;
+        }
+
+        .equ {
+            background-color: rgb(255, 168, 5);
+            color: white;
+            border: none;
+            font-size: 16px;
+            width: 60px;
+
+        }
+
+        #del {
+            width: 60px;
+        }
+    </style>
+</head>
+
+<body>
+
+
+
+    <!-- CALCULATOR in JavaScript -->
+
+    <h1 style="text-align: center;">CACULATOR</h1>
+
+    <form action="" id="call">
+
+        <div class="form">
+
+            <input placeholder="0" type="text" disabled name="" id="cal">
+
+            <br>
+
+            <div class="num">
+
+
+
+
+                <input type="button" value="1" name="" id="" onclick="call.cal.value += '1' ">
+                <input type="button" value="2" name="" id="" onclick="call.cal.value += '2' ">
+                <input type="button" value="3" name="" id="" onclick="call.cal.value += '3' ">
+                <input type="button" value="4" name="" id="" onclick="call.cal.value += '4' ">
+
+                <br>
+
+                <input type="button" value="5" name="" id="" onclick="call.cal.value += '5' ">
+                <input type="button" value="6" name="" id="" onclick="call.cal.value += '6' ">
+                <input type="button" value="7" name="" id="" onclick="call.cal.value += '7' ">
+                <input type="button" value="8" name="" id="" onclick="call.cal.value += '8' ">
+
+                <br>
+                <input type="button" value="9" name="" id="" onclick="call.cal.value += '9' ">
+                <input type="button" value="0" name="" id="" onclick="call.cal.value += '0' ">
+                <input type="button" value="+" name="" id="" onclick="call.cal.value += '+' ">
+                <input type="button" value="-" name="" id="" onclick="call.cal.value += '-' ">
+
+                <br>
+                <input type="button" value="/" name="" id="" onclick="call.cal.value += '/' ">
+                <input type="button" value="x" name="" id="" onclick="call.cal.value += '*' ">
+                <input type="button" value="AC" name="" id="" onclick="call.cal.value = ' ' ">
+                <input class="equ" type="button" value="=" name="" id=""
+                    onclick="call.cal.value = eval(call.cal.value) ">
+
+                <br>
+                <input type="button" name="" value="del" id="del" onclick="call.cal.value = call.cal.value.slice(0,-1)">
+
+            </div>
+
+
+
+
+
+        </div>
+
+
+
+
+
+    </form>
+
+
+</body>
+
+</html>
